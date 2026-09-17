@@ -1,28 +1,3 @@
----
-created: 2026-09-17T15:55:51 (UTC -03:00)
-tags: [moodle,QXD0010 - ESTRUTURA DE DADOS - 01A - 2026.2 @pintando: Pintando a casa Descrição]
-source: https://moodle2.quixada.ufc.br/mod/vpl/view.php?id=99591
-author: 
----
-
-# QXD0010 - ESTRUTURA DE DADOS - 01A
-
-> ## Excerpt
-> Data de entrega: quinta, 20 ago 2026, 23:59 Número máximo de arquivos: 5Tipo de trabalho:   Trabalho individual
-
----
--   Descrição
--   [Visualizar envios](https://moodle2.quixada.ufc.br/mod/vpl/forms/submissionview.php?id=99591&userid=3030 "Visualizar envios")
-
-## @pintando: Pintando a casa
-
-**Data de entrega**: quinta, 20 ago 2026, 23:59
-
-**Número máximo de arquivos**: 5
-
-**Tipo de trabalho**: Trabalho individual
-
- @pintando: Pintando a casa
 
 ## Pintando a casa
 
