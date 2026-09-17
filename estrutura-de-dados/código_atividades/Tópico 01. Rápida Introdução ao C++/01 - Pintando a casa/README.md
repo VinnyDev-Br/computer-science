@@ -1,8 +1,6 @@
+[![Moodle UFC](https://moodle2.quixada.ufc.br/pluginfile.php/1/theme_moove/logo/1787762535/Quixada_brasao1_horizontal_cor-01.png)](https://moodle2.quixada.ufc.br/)
 
-## Pintando a casa
-
-![](qxd0010-estrutura/cover.jpg)
-
+# Pintando a casa
 ## Contexto
 
 Fernando comprou uma casa triangular. Ao tentar calcular a quantidade de tinta necessária para pintar as paredes, ele percebeu que precisava saber como calcular a área de um triângulo. Felizmente, ele encontrou a Fórmula de Heron, que permite calcular a área de um triângulo a partir do tamanho de seus lados.
@@ -47,7 +45,7 @@ Implemente um programa que, dado o tamanho dos três lados de um triângulo, cal
 
 -   Para exibir um número de ponto flutuante do tipo `double`, recomendado por sua maior precisão, com seis casas decimais em C++, utilize os manipuladores de formato std::fixed e std::setprecision juntamente como o `cout`. 
 
-```
+```cpp
 int main() {
     double resultado {435.87654325};
     std::cout << std::fixed << std::setprecision(6) << resultado << "\n";

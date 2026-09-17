@@ -1,13 +1,60 @@
+[![Moodle UFC](https://moodle2.quixada.ufc.br/pluginfile.php/1/theme_moove/logo/1787762535/Quixada_brasao1_horizontal_cor-01.png)](https://moodle2.quixada.ufc.br/)
+
 # Fuga em helicóptero - OBI 2016
+## Contexto
 
-**Link original (Moodle - VPL):** https://moodle2.quixada.ufc.br/mod/vpl/view.php?id=99593
+Um fugitivo, um helicóptero e um policial estão em posições distintas numa pista circular, exatamente como a mostrada na figura ao lado, com dezesseis posições numeradas de 0 a 15 em direção anti-horária.
 
-## Enunciado
+O helicóptero e o policial ficam sempre parados. O objetivo do fugitivo é chegar no helicóptero sem passar pelo policial antes, claro. Ele pode decidir correr na direção horária, ou na direção anti-horária.
 
-> ⚠️ Cole aqui o enunciado completo da questão (a página exige login, então não consegui acessar o conteúdo automaticamente).
+Neste problema, dadas as posições do helicóptero, do policial e do fugitivo, e a direção em que o fugitivo decide correr, seu programa deve dizer se ele vai ou não conseguir fugir! Na figura, se o fugitivo decidir correr na direção horária, ele consegue fugir; se decidir correr na direção anti-horária, ele vai ser preso antes de chegar no helicóptero!
 
-## Solução
+### Entrada
 
-```cpp
-// seu código aqui
+-   Quatro inteiros **H**, **P**, **F** e **D** em uma única linha, que representam:
+    -   **H:** a posição do helicóptero (0 a 15),
+    -   **P:** a posição do policial (0 a 15),
+    -   **F:** a posição do fugitivo (0 a 15),
+    -   **D:** a direção em que o fugitivo corre (-1 para horário e 1 para anti-horária).
+
+### Saída
+
+-   Imprima **"S"** se o fugitivo conseguir chegar ao helicóptero, ou **"N"** caso contrário.
+
+### Restrições
+
+-   Os inteiros **H**, **P** e **F são distintos e estão entre** 0 **e** 15, inclusive.
+
+## Testes
+
+```
+>>>>>>>> INSERT
+4 14 7 -1
+======== EXPECT
+S
+<<<<<<<< FINISH
+```
+
+```
+>>>>>>>> INSERT
+4 14 7 1
+======== EXPECT
+N
+<<<<<<<< FINISH
+```
+
+```
+>>>>>>>> INSERT
+15 9 8 -1
+======== EXPECT
+S
+<<<<<<<< FINISH
+```
+
+```
+>>>>>>>> INSERT
+0 14 15 -1
+======== EXPECT
+N
+<<<<<<<< FINISH
 ```
