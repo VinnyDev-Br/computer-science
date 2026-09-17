@@ -22,4 +22,3 @@ int main(int argc, char** argv) {
     cout << fixed << setprecision(2) << resultado << "\n";
     return 0;
 }
-  

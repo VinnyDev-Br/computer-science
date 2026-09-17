@@ -1,13 +1,72 @@
-# Criança, jovem, adulto
 
-**Link original (Moodle - VPL):** https://moodle2.quixada.ufc.br/mod/vpl/view.php?id=99592
+## Criança, jovem, adulto
 
-## Enunciado
+![](https://moodle2.quixada.ufc.br/pluginfile.php/112723/mod_vpl/intro/cover.jpg)
 
-> ⚠️ Cole aqui o enunciado completo da questão (a página exige login, então não consegui acessar o conteúdo automaticamente).
+## Contexto
 
-## Solução
+Em um projeto escolar, um professor precisa classificar os alunos de acordo com suas idades. A tarefa é determinar se um aluno é uma criança, jovem, adulto, idoso ou uma múmia, com base em regras específicas. O professor gostaria que a implementação fosse feita de forma clara e eficiente.
 
-```cpp
-// seu código aqui
+Leia o nome da pessoa e um inteiro que representa a idade de uma pessoa e escreva:
+
+-   "crianca" se menor que 12 (não use o ç),
+-   "jovem" se menor que 18,
+-   "adulto" se menor que 65,
+-   "idoso" se menor que 1000,
+-   "mumia" caso contrario (não ponha o acento).
+
+### Entrada
+
+-   Na primeira linha o nome da pessoa (uma string)
+-   Na segunda linha a idade (um inteiro)
+
+### Saída
+
+-   Uma frase no formato "`<nome>` eh `<classificação>`"
+
+### Restrição
+
+Por simplificações, não faça flexão de gênero (idoso, idosa, adulto, adulta), não use acento, nem ç, nem maiúscula.
+
+## Testes
+
+```
+>>>>>>>> INSERT
+mario
+4
+======== EXPECT
+mario eh crianca
+<<<<<<<< FINISH
+```
+
+```
+>>>>>>>> INSERT
+jose
+65
+======== EXPECT
+jose eh idoso
+<<<<<<<< FINISH
+```
+
+## Dicas
+
+### Programando em: C++
+
+-   Utilize a técnica do seleção intervalada e termine com um else sem condição:
+
+```
+int main() {
+    if(x < 12) {
+        ...
+    }  
+    else if(x < 18) {
+        ...
+    }  
+    else if(x < 65) {
+        ...
+    }  
+    else {
+        ...
+    }
+}
 ```
