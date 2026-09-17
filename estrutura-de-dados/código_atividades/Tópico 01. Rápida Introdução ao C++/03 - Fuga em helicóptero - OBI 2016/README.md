@@ -1,4 +1,4 @@
-[![Moodle UFC](https://moodle2.quixada.ufc.br/pluginfile.php/1/theme_moove/logo/1787762535/Quixada_brasao1_horizontal_cor-01.png)](https://moodle2.quixada.ufc.br/)
+![Moodle UFC](https://moodle2.quixada.ufc.br/pluginfile.php/1/theme_moove/logo/1787762535/Quixada_brasao1_horizontal_cor-01.png)
 
 # Fuga em helicóptero - OBI 2016
 ## Contexto
