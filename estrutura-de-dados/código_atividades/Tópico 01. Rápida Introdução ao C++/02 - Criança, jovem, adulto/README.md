@@ -1,4 +1,4 @@
-![Moodle UFC](https://moodle2.quixada.ufc.br/pluginfile.php/1/theme_moove/logo/1787762535/Quixada_brasao1_horizontal_cor-01.png)
+![Brasão da Universidade Federal do Ceará](https://www.ufc.br/brasao-vertical.svg)
 
 # Criança, jovem, adulto
 
