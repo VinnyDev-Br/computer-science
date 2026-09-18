@@ -1,8 +1,12 @@
 # 📚 Faculdade
 ![Brasão da Universidade Federal do Ceará](https://www.ufc.br/brasao-vertical.svg)
 
+---
+```
 Repositório de estudos do meu curso em Ciência da Computação — exercícios, implementações e anotações desenvolvidos ao longo da graduação.
+```
 
+---
 ## 📂 Conteúdo
 
 | Módulo | Descrição | Status |
