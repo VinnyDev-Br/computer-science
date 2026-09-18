@@ -5,9 +5,7 @@
 # 💻 Ciência da Computação
 ### Repositório de estudos, exercícios e implementações da graduação
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+
 ![Status](https://img.shields.io/badge/status-em%20progresso-yellow?style=for-the-badge)
 
 *"Todo especialista já foi, um dia, um iniciante que não desistiu."*
@@ -22,54 +20,18 @@ Este repositório reúne os estudos da minha graduação em Ciência da Computa�
 
 ## 🧭 Navegação rápida
 
-| Módulo | Linguagem | Conceitos-chave | Nº de exercícios |
-|---|---|---|---|
-| [`estrutura-de-dados/`](./estrutura-de-dados) | C++ | Recursão, complexidade, ponteiros, TADs | 15 |
-| [`programacao-orientada-a-objetos/`](./programacao-orientada-a-objetos) | Java | Encapsulamento, classes, atributos estáticos | 15 |
-| `banco-de-dados/` | SQL | Modelagem, DDL, consultas | 🔜 em breve |
-
+| Módulo | Linguagem | Conceitos-chave |
+|---|---|---|
+| [`estrutura-de-dados/`](./estrutura-de-dados) | C++ | Recursão, complexidade, ponteiros, TADs 
+| [`programacao-orientada-a-objetos/`](./programacao-orientada-a-objetos) | Java | Encapsulamento, classes, atributos estáticos 
+| [`fundamentos-banco-de-dados/`](./fundamentos-banco-de-dados/) | SQL | Modelagem, DDL, consultas |
 ## 🌳 Estrutura completa do projeto
 
 <details>
 <summary><strong>Clique para expandir a árvore de diretórios</strong> 🗂️</summary>
 
 ```
-.
-├── estrutura-de-dados/
-│   └── código_atividades/
-│       ├── Tópico 01. Rápida Introdução ao C++/
-│       │   ├── 01 - Pintando a casa/
-│       │   ├── 02 - Criança, jovem, adulto/
-│       │   ├── 03 - Fuga em helicóptero - OBI 2016/
-│       │   ├── 04 - Pedra na lua/
-│       │   ├── 05 - Quantos casais na arca/
-│       │   ├── 06 - Figurinhas repetidas/
-│       │   └── 07 - Gomos da cobrinha/
-│       ├── Tópico 02. Recursividade e Funções Recursivas/
-│       │   ├── 01 - De quantas maneiras podemos subir/
-│       │   ├── 02 - Contando caracteres recursivamente/
-│       │   ├── 03 - Triângulo de Somas/
-│       │   ├── 04 - Operações básicas/
-│       │   ├── 05 - Torres de Hanói/
-│       │   └── 06 - Queimada - Tocando fogo na floresta/
-│       ├── Tópico 03. Noções de Análise da Complexidade de Algoritmos/
-│       ├── Tópico 04. Ponteiros e Referências em C++, Alocação Dinâmica/
-│       └── Tópico 05. TAD - Tipos Abstratos de Dados/
-│           ├── 01 - Círculo/        (Point + Circle, composição de TADs)
-│           └── 02 - Matriz/         (matriz em vetor 1D, row-major order)
-│
-└── programacao-orientada-a-objetos/
-    ├── Aluguel de carros/           (relação entre 3 classes + atributo estático)
-    ├── Animal/  &  Animal v1/       (evolução do mesmo problema, v1 → v2)
-    ├── Conta Bancária/  &  Encapsulada/   (antes/depois de aplicar encapsulamento)
-    ├── Conta V1/
-    ├── Crianças Andando de Motoca/
-    ├── Feira do Leite/              (múltiplas classes colaborando)
-    ├── Jogo da Colheita/
-    ├── Livro v1/
-    ├── Lâmpada/  &  Lâmpada Encapsulada/
-    ├── Robô simples/
-    └── Toalha/  &  Toalha Encapsulada/
+# Arvore do diretorio em andamento
 ```
 
 </details>
@@ -89,11 +51,11 @@ Alguns exercícios que valem uma olhada mais de perto:
 
 <div>
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C++17-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://www.java.com/)
+[![C++](https://img.shields.io/badge/C++17-00599C?style=flat-square&logo=cplusplus&logoColor=white)](https://isocpp.org/)
+[![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)](https://git-scm.com/)
+[![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)](https://code.visualstudio.com/)
 
 </div>
 
