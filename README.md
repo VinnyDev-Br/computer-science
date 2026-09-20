@@ -1,4 +1,4 @@
-<!-- ⚠️ Troque SEU-USUARIO pelo seu username do GitHub em todos os links abaixo -->
+<!-- ⚠️ Troque VinnyDev-Br pelo seu username do GitHub em todos os links abaixo -->
 
 <div align="center">
 
@@ -12,10 +12,10 @@
 
 [![Email](https://img.shields.io/badge/Email-0D0221?style=for-the-badge&logo=gmail&logoColor=FF00F6)](mailto:freitasvini676@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0D0221?style=for-the-badge&logo=linkedin&logoColor=00F0FF)](https://www.linkedin.com/in/vinicius-macedo-dev/)
-[![GitHub](https://img.shields.io/badge/GitHub-0D0221?style=for-the-badge&logo=github&logoColor=FFFFFF)](https://github.com/SEU-USUARIO)
+[![GitHub](https://img.shields.io/badge/GitHub-0D0221?style=for-the-badge&logo=github&logoColor=FFFFFF)](https://github.com/VinnyDev-Br)
 ![Status](https://img.shields.io/badge/STATUS-OPEN_TO_WORK-00F0FF?style=for-the-badge&labelColor=0D0221)
 
-<img src="https://komarev.com/ghpvc/?username=SEU-USUARIO&label=Profile+views&color=ff00f6&style=flat-square&labelColor=0D0221" alt="views" />
+<img src="https://komarev.com/ghpvc/?username=VinnyDev-Br&label=Profile+views&color=ff00f6&style=flat-square&labelColor=0D0221" alt="views" />
 
 </div>
 
@@ -107,12 +107,12 @@ My foundation in **Data Structures** and **Object-Oriented Programming** (Java a
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=SEU-USUARIO&show_icons=true&hide_border=true&bg_color=0D0221&title_color=FF00F6&icon_color=00F0FF&text_color=FFFFFF&ring_color=FF00F6" alt="GitHub stats" />
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SEU-USUARIO&layout=compact&hide_border=true&bg_color=0D0221&title_color=FF00F6&text_color=FFFFFF" alt="Top languages" />
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=VinnyDev-Br&show_icons=true&hide_border=true&bg_color=0D0221&title_color=FF00F6&icon_color=00F0FF&text_color=FFFFFF&ring_color=FF00F6" alt="GitHub stats" />
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=VinnyDev-Br&layout=compact&hide_border=true&bg_color=0D0221&title_color=FF00F6&text_color=FFFFFF" alt="Top languages" />
 
-<img src="https://streak-stats.demolab.com?user=SEU-USUARIO&hide_border=true&background=0D0221&ring=FF00F6&fire=00F0FF&currStreakLabel=FF00F6&sideLabels=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=9E9E9E" alt="Streak" />
+<img src="https://streak-stats.demolab.com?user=VinnyDev-Br&hide_border=true&background=0D0221&ring=FF00F6&fire=00F0FF&currStreakLabel=FF00F6&sideLabels=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=9E9E9E" alt="Streak" />
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=SEU-USUARIO&bg_color=0D0221&color=FF00F6&line=FF00F6&point=00F0FF&area=true&area_color=FF00F6&hide_border=true" alt="Activity graph" />
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=VinnyDev-Br&bg_color=0D0221&color=FF00F6&line=FF00F6&point=00F0FF&area=true&area_color=FF00F6&hide_border=true" alt="Activity graph" />
 
 </div>
 
@@ -124,8 +124,8 @@ My foundation in **Data Structures** and **Object-Oriented Programming** (Java a
 
 <div align="center">
 
-[![Projeto 1](https://github-readme-stats.vercel.app/api/pin/?username=SEU-USUARIO&repo=NOME-DO-REPO-1&hide_border=true&bg_color=0D0221&title_color=FF00F6&text_color=FFFFFF&icon_color=00F0FF)](https://github.com/SEU-USUARIO/NOME-DO-REPO-1)
-[![Projeto 2](https://github-readme-stats.vercel.app/api/pin/?username=SEU-USUARIO&repo=NOME-DO-REPO-2&hide_border=true&bg_color=0D0221&title_color=FF00F6&text_color=FFFFFF&icon_color=00F0FF)](https://github.com/SEU-USUARIO/NOME-DO-REPO-2)
+[![Projeto 1](https://github-readme-stats.vercel.app/api/pin/?username=VinnyDev-Br&repo=NOME-DO-REPO-1&hide_border=true&bg_color=0D0221&title_color=FF00F6&text_color=FFFFFF&icon_color=00F0FF)](https://github.com/VinnyDev-Br/NOME-DO-REPO-1)
+[![Projeto 2](https://github-readme-stats.vercel.app/api/pin/?username=VinnyDev-Br&repo=NOME-DO-REPO-2&hide_border=true&bg_color=0D0221&title_color=FF00F6&text_color=FFFFFF&icon_color=00F0FF)](https://github.com/VinnyDev-Br/NOME-DO-REPO-2)
 
 </div>
 
@@ -142,9 +142,9 @@ Para cada projeto, deixe no README do repositório: **problema → dados usados 
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SEU-USUARIO/SEU-USUARIO/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SEU-USUARIO/SEU-USUARIO/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/SEU-USUARIO/SEU-USUARIO/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/VinnyDev-Br/VinnyDev-Br/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/VinnyDev-Br/VinnyDev-Br/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/VinnyDev-Br/VinnyDev-Br/output/github-contribution-grid-snake.svg">
 </picture>
 </div>
 
