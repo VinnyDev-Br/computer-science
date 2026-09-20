@@ -1,163 +1,122 @@
-<!-- ⚠️ Troque VinnyDev-Br pelo seu username do GitHub em todos os links abaixo -->
-
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:FF00F6,100:00F0FF&height=220&section=header&text=Vinicius%20Macedo&fontSize=56&fontColor=FFFFFF&fontAlignY=38&animation=fadeIn&desc=Data%20Analyst%20in%20the%20making%20%7C%20Computer%20Science%20%40%20UFC&descSize=18&descAlignY=60" alt="Vinicius Macedo" />
+<img src="https://www.ufc.br/brasao-vertical.svg" alt="Brasão da Universidade Federal do Ceará" width="110">
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=FF00F6&center=true&vCenter=true&width=720&height=45&lines=Transformando+dados+em+decis%C3%B5es+%F0%9F%93%8A;Turning+raw+data+into+insights+%F0%9F%92%A1;Python+%7C+SQL+%7C+Power+BI+%7C+Excel;Aberto+a+oportunidades+em+An%C3%A1lise+de+Dados+%F0%9F%9A%80" alt="Typing SVG" />
-</a>
+# 💻 Ciência da Computação
+### Repositório de estudos, exercícios e implementações da graduação
 
-<br/>
 
-[![Email](https://img.shields.io/badge/Email-0D0221?style=for-the-badge&logo=gmail&logoColor=FF00F6)](mailto:freitasvini676@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0D0221?style=for-the-badge&logo=linkedin&logoColor=00F0FF)](https://www.linkedin.com/in/vinicius-macedo-dev/)
-[![GitHub](https://img.shields.io/badge/GitHub-0D0221?style=for-the-badge&logo=github&logoColor=FFFFFF)](https://github.com/VinnyDev-Br)
-![Status](https://img.shields.io/badge/STATUS-OPEN_TO_WORK-00F0FF?style=for-the-badge&labelColor=0D0221)
+![Status](https://img.shields.io/badge/status-em%20progresso-yellow?style=for-the-badge)
 
-<img src="https://komarev.com/ghpvc/?username=VinnyDev-Br&label=Profile+views&color=ff00f6&style=flat-square&labelColor=0D0221" alt="views" />
+*"Todo especialista já foi, um dia, um iniciante que não desistiu."*
 
 </div>
 
 ---
 
-<table>
-<tr>
-<td width="62%" valign="top">
+## 👋 Sobre
 
-## 👋 Olá, eu sou o Vinícius! <img src="https://flagcdn.com/24x18/br.png" alt="Brasil" width="24">
+Este repositório reúne os estudos da minha graduação em Ciência da Computação: exercícios, implementações e pequenos projetos organizados por disciplina, cobrindo desde estrutura de dados e recursão em C++ até programação orientada a objetos em Java. Cada pasta representa um exercício resolvido, com seu próprio README explicando o contexto, a entrada/saída esperada e, quando aplicável, os casos de teste.
 
-Graduando em **Ciência da Computação** pela **Universidade Federal do Ceará (UFC)**, com foco em **Análise de Dados**.
+## 🧭 Navegação rápida
 
-Uso **Python** (pandas, seaborn, matplotlib) para manipular, explorar e visualizar dados, e **SQL**, **Excel** e **Power BI** para consultar, organizar e transformar informação em **dashboards** que apoiam decisões.
+| Módulo | Linguagem | Conceitos-chave | Nº de exercícios |
+|---|---|---|---|
+| [`estrutura-de-dados/`](./estrutura-de-dados) | C++ | Recursão, complexidade, ponteiros, TADs | 15 |
+| [`programacao-orientada-a-objetos/`](./programacao-orientada-a-objetos) | Java | Encapsulamento, classes, atributos estáticos | 15 |
+| `banco-de-dados/` | SQL | Modelagem, DDL, consultas | 🔜 em breve |
 
-Minha base em **Estruturas de Dados** e **POO** (Java e C++) me ajuda a escrever soluções eficientes, organizadas e fáceis de manter. Tenho ainda experiência prática com **testes de software** e **gestão de dados**.
-
-</td>
-<td width="38%" align="center" valign="middle">
-
-<img src="./src/edgerunners.gif" alt="Edgerunners" width="100%" />
-
-</td>
-</tr>
-</table>
+## 🌳 Estrutura completa do projeto
 
 <details>
-<summary><b>🇺🇸 Read in English</b></summary>
+<summary><strong>Clique para expandir a árvore de diretórios</strong> 🗂️</summary>
 
-<br/>
-
-## 👋 Hello, I'm Vinicius! <img src="https://flagcdn.com/24x18/us.png" alt="USA" width="24">
-
-Computer Science undergraduate at the **Federal University of Ceará (UFC), Brazil** <img src="https://flagcdn.com/24x18/br.png" alt="Brazil" width="24">, focused on **Data Analysis**.
-
-I use **Python** (pandas, seaborn, matplotlib) for data wrangling, exploration and visualization, and **SQL**, **Excel** and **Power BI** to query, organize and turn information into **dashboards** that support data-driven decisions.
-
-My foundation in **Data Structures** and **Object-Oriented Programming** (Java and C++) helps me write efficient, well-structured code for data processing. I also bring hands-on experience in **software testing** and **data management**.
+```
+.
+├── estrutura-de-dados/
+│   └── código_atividades/
+│       ├── Tópico 01. Rápida Introdução ao C++/
+│       │   ├── 01 - Pintando a casa/
+│       │   ├── 02 - Criança, jovem, adulto/
+│       │   ├── 03 - Fuga em helicóptero - OBI 2016/
+│       │   ├── 04 - Pedra na lua/
+│       │   ├── 05 - Quantos casais na arca/
+│       │   ├── 06 - Figurinhas repetidas/
+│       │   └── 07 - Gomos da cobrinha/
+│       ├── Tópico 02. Recursividade e Funções Recursivas/
+│       │   ├── 01 - De quantas maneiras podemos subir/
+│       │   ├── 02 - Contando caracteres recursivamente/
+│       │   ├── 03 - Triângulo de Somas/
+│       │   ├── 04 - Operações básicas/
+│       │   ├── 05 - Torres de Hanói/
+│       │   └── 06 - Queimada - Tocando fogo na floresta/
+│       ├── Tópico 03. Noções de Análise da Complexidade de Algoritmos/
+│       ├── Tópico 04. Ponteiros e Referências em C++, Alocação Dinâmica/
+│       └── Tópico 05. TAD - Tipos Abstratos de Dados/
+│           ├── 01 - Círculo/        (Point + Circle, composição de TADs)
+│           └── 02 - Matriz/         (matriz em vetor 1D, row-major order)
+│
+└── programacao-orientada-a-objetos/
+    ├── Aluguel de carros/           (relação entre 3 classes + atributo estático)
+    ├── Animal/  &  Animal v1/       (evolução do mesmo problema, v1 → v2)
+    ├── Conta Bancária/  &  Encapsulada/   (antes/depois de aplicar encapsulamento)
+    ├── Conta V1/
+    ├── Crianças Andando de Motoca/
+    ├── Feira do Leite/              (múltiplas classes colaborando)
+    ├── Jogo da Colheita/
+    ├── Livro v1/
+    ├── Lâmpada/  &  Lâmpada Encapsulada/
+    ├── Robô simples/
+    └── Toalha/  &  Toalha Encapsulada/
+```
 
 </details>
 
----
+## 🔍 Destaques técnicos
 
-## ⚡ Quick facts
+Alguns exercícios que valem uma olhada mais de perto:
 
-| | |
-|---|---|
-| 🎓 **Formação** | Ciência da Computação, UFC |
-| 🎯 **Objetivo** | Analista de Dados |
-| 🔭 **Estudando agora** | SQL avançado (JOINs), análise exploratória com Python |
-| 🌱 **Base sólida em** | Estruturas de Dados, POO, Banco de Dados |
-| 🗣️ **Idiomas** | Português (nativo), Inglês (em evolução) |
-| 📫 **Contato** | [LinkedIn](https://www.linkedin.com/in/vinicius-macedo-dev/) · [E-mail](mailto:freitasvini676@gmail.com) |
+- **[`Queimada - Tocando fogo na floresta`](<./estrutura-de-dados/código_atividades/Tópico%2002.%20Recursividade%20Funções%20Recursivas/06%20-%20Queimada%20-%20Tocando%20fogo%20na%20floresta>)** — flood fill recursivo em matriz de caracteres, o mesmo algoritmo por trás do "balde de tinta" de editores de imagem.
+- **[`Torres de Hanói`](<./estrutura-de-dados/código_atividades/Tópico%2002.%20Recursividade%20Funções%20Recursivas/05%20-%20Torres%20de%20Hanói>)** — recursão clássica, resolvida do zero.
+- **[`TAD Círculo`](<./estrutura-de-dados/código_atividades/Tópico%2005.%20TAD%20-%20Tipos%20Abstratos%20de%20Dados/01%20-%20Círculo>)** — TAD `Circle` composto por outro TAD (`Point`), com gerência manual de memória em C++.
+- **[`TAD Matriz`](<./estrutura-de-dados/código_atividades/Tópico%2005.%20TAD%20-%20Tipos%20Abstratos%20de%20Dados/02%20-%20Matriz>)** — matriz 2D implementada sobre um vetor 1D alocado dinamicamente (row-major), com soma e multiplicação de matrizes.
+- **[`Conta Bancária` → `Conta Bancária Encapsulada`](./programacao-orientada-a-objetos)** — o mesmo domínio revisitado para mostrar, na prática, o antes e o depois de aplicar encapsulamento em Java.
+- **[`Aluguel de carros`](./programacao-orientada-a-objetos/Aluguel%20de%20carros)** — quatro classes colaborando (`Carro`, `Pessoa`, `Locadora`, `Exec`) com contador estático de carros alugados.
 
----
+## 🛠️ Tecnologias
 
-## 🛠️ Stack
+<div>
 
-**📊 Análise & Visualização**
-
-![Python](https://img.shields.io/badge/Python-0D0221?style=for-the-badge&logo=python&logoColor=00F0FF)
-![Pandas](https://img.shields.io/badge/Pandas-0D0221?style=for-the-badge&logo=pandas&logoColor=FF00F6)
-![Seaborn](https://img.shields.io/badge/Seaborn-0D0221?style=for-the-badge&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-0D0221?style=for-the-badge&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power_BI-0D0221?style=for-the-badge&logo=powerbi&logoColor=F2C811)
-![Excel](https://img.shields.io/badge/Excel-0D0221?style=for-the-badge&logo=microsoftexcel&logoColor=21A366)
-![Jupyter](https://img.shields.io/badge/Jupyter-0D0221?style=for-the-badge&logo=jupyter&logoColor=F37626)
-
-**🗄️ Dados**
-
-![SQL](https://img.shields.io/badge/SQL-0D0221?style=for-the-badge&logo=postgresql&logoColor=00F0FF)
-
-**💻 Programação**
-
-![Java](https://img.shields.io/badge/Java-0D0221?style=for-the-badge&logo=openjdk&logoColor=FF00F6)
-![C++](https://img.shields.io/badge/C++-0D0221?style=for-the-badge&logo=cplusplus&logoColor=00F0FF)
-![Python](https://img.shields.io/badge/Python-0D0221?style=for-the-badge&logo=python&logoColor=FF00F6)
-
-**🧰 Ferramentas**
-
-![Git](https://img.shields.io/badge/Git-0D0221?style=for-the-badge&logo=git&logoColor=F05032)
-![GitHub](https://img.shields.io/badge/GitHub-0D0221?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-0D0221?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC)
-![Linux](https://img.shields.io/badge/Linux-0D0221?style=for-the-badge&logo=linux&logoColor=FCC624)
-
----
-
-## 📈 GitHub Analytics
-
-<div align="center">
-
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=VinnyDev-Br&show_icons=true&hide_border=true&bg_color=0D0221&title_color=FF00F6&icon_color=00F0FF&text_color=FFFFFF&ring_color=FF00F6" alt="GitHub stats" />
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=VinnyDev-Br&layout=compact&hide_border=true&bg_color=0D0221&title_color=FF00F6&text_color=FFFFFF" alt="Top languages" />
-
-<img src="https://streak-stats.demolab.com?user=VinnyDev-Br&hide_border=true&background=0D0221&ring=FF00F6&fire=00F0FF&currStreakLabel=FF00F6&sideLabels=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=9E9E9E" alt="Streak" />
-
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=VinnyDev-Br&bg_color=0D0221&color=FF00F6&line=FF00F6&point=00F0FF&area=true&area_color=FF00F6&hide_border=true" alt="Activity graph" />
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![C++](https://img.shields.io/badge/C++17-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 
 </div>
 
----
+## 🎯 Objetivo do repositório
 
-## 🚀 Projetos em destaque
+Consolidar, na prática, os fundamentos de Ciência da Computação — e ao mesmo tempo servir de portfólio: cada pasta reflete um conceito dominado, do "por quê" ao código funcionando, com testes de entrada e saída documentados nos próprios READMEs dos exercícios.
 
-> Fixe no perfil os 6 repositórios mais fortes. Sugestão de cards abaixo (edite os nomes e links):
+## 📖 Como navegar
 
-<div align="center">
+Cada exercício tem seu próprio `README.md` com contexto, entrada/saída esperada e, quando aplicável, casos de teste. Para compilar os exemplos em C++:
 
-[![Projeto 1](https://github-readme-stats.vercel.app/api/pin/?username=VinnyDev-Br&repo=NOME-DO-REPO-1&hide_border=true&bg_color=0D0221&title_color=FF00F6&text_color=FFFFFF&icon_color=00F0FF)](https://github.com/VinnyDev-Br/NOME-DO-REPO-1)
-[![Projeto 2](https://github-readme-stats.vercel.app/api/pin/?username=VinnyDev-Br&repo=NOME-DO-REPO-2&hide_border=true&bg_color=0D0221&title_color=FF00F6&text_color=FFFFFF&icon_color=00F0FF)](https://github.com/VinnyDev-Br/NOME-DO-REPO-2)
+```bash
+g++ -std=c++17 main.cpp -o programa && ./programa
+```
 
-</div>
+Para rodar os exemplos em Java:
 
-<details>
-<summary><b>💡 Dica para o portfólio de dados</b></summary>
-
-Para cada projeto, deixe no README do repositório: **problema → dados usados → método → 1 gráfico de destaque → conclusão**. Recrutadores de dados leem isso em 30 segundos.
-
-</details>
-
----
-
-## 🐍 Contribution Snake
-
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/VinnyDev-Br/VinnyDev-Br/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/VinnyDev-Br/VinnyDev-Br/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/VinnyDev-Br/VinnyDev-Br/output/github-contribution-grid-snake.svg">
-</picture>
-</div>
+```bash
+javac Exec.java && java Exec
+```
 
 ---
 
 <div align="center">
 
-<i>"Data is the new soil." Vamos cultivar insights juntos? 🌱</i>
-
-<br/><br/>
-
-[![Vamos conversar](https://img.shields.io/badge/Vamos_conversar%3F-FF00F6?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vinicius-macedo-dev/)
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00F0FF,100:FF00F6&height=120&section=footer" alt="footer" />
+📫 Aberto a conversas sobre código, dados ou ensino — sinta-se à vontade para abrir uma *issue* ou entrar em contato.
 
 </div>
