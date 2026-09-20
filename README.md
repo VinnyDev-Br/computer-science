@@ -8,7 +8,6 @@
 
 ![Status](https://img.shields.io/badge/status-em%20progresso-yellow?style=for-the-badge)
 
-*"Todo especialista já foi, um dia, um iniciante que não desistiu."*
 
 </div>
 
@@ -24,7 +23,7 @@ Este repositório reúne os estudos da minha graduação em Ciência da Computa�
 |---|---|---|---|
 | [`estrutura-de-dados/`](./estrutura-de-dados) | C++ | Recursão, complexidade, ponteiros, TADs | 15 |
 | [`programacao-orientada-a-objetos/`](./programacao-orientada-a-objetos) | Java | Encapsulamento, classes, atributos estáticos | 15 |
-| `banco-de-dados/` | SQL | Modelagem, DDL, consultas | 🔜 em breve |
+| `fundamentos-banco-de-dados/` | SQL | Modelagem, DDL, consultas | 🔜 em breve |
 
 ## 🌳 Estrutura completa do projeto
 
@@ -87,11 +86,11 @@ Alguns exercícios que valem uma olhada mais de perto:
 
 <div>
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C++17-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://www.java.com)
+[![C++](https://img.shields.io/badge/C++17-00599C?style=flat-square&logo=cplusplus&logoColor=white)](https://isocpp.org)
+[![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org)
+[![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)](https://git-scm.com)
+[![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)](https://code.visualstudio.com)
 
 </div>
 
