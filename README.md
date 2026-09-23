@@ -19,8 +19,8 @@ Este repositório reúne os estudos da minha graduação em Ciência da Computa�
 
 ## 🧭 Navegação rápida
 
-| Módulo | Linguagem | Conceitos-chave | Nº de exercícios |
-|---|---|---|---|
+| Módulo | Linguagem | Conceitos-chave | 
+|---|---|---|
 | [`estrutura-de-dados/`](./estrutura-de-dados) | C++ | Recursão, complexidade, ponteiros, TADs 
 | [`programacao-orientada-a-objetos/`](./programacao-orientada-a-objetos) | Java | Encapsulamento, classes, atributos estáticos 
 | `fundamentos-banco-de-dados/` | SQL | Modelagem, DDL, consultas
