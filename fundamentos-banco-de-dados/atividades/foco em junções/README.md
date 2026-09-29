@@ -34,7 +34,7 @@ O banco de dados representa um universo de fantasia com personagens, dragões, b
 
 ---
 
-## 🧠 Para que serve cada novidade
+## 🧠 Funcionalidades
 
 ### `LEFT JOIN`
 
@@ -363,17 +363,7 @@ JOIN DRAGOES d ON d.id_personagem = p.id;
 
 > O `ILIKE` funciona no PostgreSQL. Em outros SGBDs, use `LOWER(coluna) LIKE '...'`.
 
----
 
-## 📌 Melhorias futuras
-
-- Praticar `RIGHT JOIN` e `FULL JOIN`
-- Usar `ORDER BY` para ordenar os resultados
-- Combinar `JOIN` com `GROUP BY` e funções de agregação
-- Criar subconsultas com `IN` e `EXISTS`
-- Criar visões (`VIEW`)
-
----
 
 ## 🎓 Aprendizados
 
@@ -387,4 +377,4 @@ Esta atividade permitiu entender que nem toda relação entre tabelas é um `JOI
 
 ---
 
-> Atividade desenvolvida para fins de estudo na disciplina de **Banco de Dados**.
+> Atividade desenvolvida para fins de estudo na disciplina de **Banco de Dados** UFC - Campus Quixadá 2026.2.
