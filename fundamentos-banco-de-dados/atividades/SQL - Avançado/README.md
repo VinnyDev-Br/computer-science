@@ -208,18 +208,6 @@ GROUP BY d.Dnome;
 
 ---
 
-## 📌 Melhorias futuras
-
-Algumas ideias para continuar os estudos:
-
-- Praticar `LEFT JOIN` e `RIGHT JOIN`
-- Usar `ORDER BY` para ordenar os resultados
-- Dar apelidos às colunas com `AS`
-- Combinar `GROUP BY` com mais de uma coluna
-- Criar subconsultas
-- Resolver mais questões com o esquema Company
-
----
 
 ## 🎓 Aprendizados
 
@@ -233,4 +221,4 @@ Esta atividade permitiu entender como o SQL vai além de buscar dados: com **fun
 
 ---
 
-> Atividade desenvolvida para fins de estudo na disciplina de **Banco de Dados**.
+> Atividade desenvolvida para fins de estudo na disciplina de **QXD QXD0011 Fundamentos Banco de Dados** UFC Campus Quixadá, 2026.2..
