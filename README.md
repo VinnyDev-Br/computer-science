@@ -14,15 +14,12 @@
 ## 📑 Sumário
 
 1. [Visão geral](#-visão-geral)
-2. [Estrutura do repositório](#-estrutura-do-repositório)
-3. [Pré-requisitos](#-pré-requisitos)
-4. [Como compilar e executar](#-como-compilar-e-executar)
-5. [Módulo: Estrutura de Dados (C++)](#-módulo-estrutura-de-dados-c)
-6. [Módulo: Programação Orientada a Objetos (Java)](#-módulo-programação-orientada-a-objetos-java)
-7. [Módulo: Fundamentos de Banco de Dados (SQL)](#-módulo-fundamentos-de-banco-de-dados-sql)
-8. [Convenções do projeto](#-convenções-do-projeto)
-9. [Problemas conhecidos](#-problemas-conhecidos)
-10. [Roadmap](#-roadmap)
+2. [Pré-requisitos](#-pré-requisitos)
+3. [Como compilar e executar](#-como-compilar-e-executar)
+4. [Módulo: Estrutura de Dados (C++)](#-módulo-estrutura-de-dados-c)
+5. [Módulo: Programação Orientada a Objetos (Java)](#-módulo-programação-orientada-a-objetos-java)
+6. [Módulo: Fundamentos de Banco de Dados (SQL)](#-módulo-fundamentos-de-banco-de-dados-sql)
+
 
 ---
 
@@ -36,53 +33,6 @@ Este repositório reúne os estudos da graduação em Ciência da Computação (
 | [`programacao-orientada-a-objetos/`](./programacao-orientada-a-objetos) | Java | Classes, encapsulamento, associação, herança, abstração |
 | [`fundamentos-banco-de-dados/`](./fundamentos-banco-de-dados) | SQL (PostgreSQL) | Junções, agregações, subconsultas |
 
----
-
-## 🌳 Estrutura do repositório
-
-```
-computer-science/
-├── README.md
-├── .vscode/settings.json                  # tema do editor (GitHub Dark Dimmed)
-│
-├── estrutura-de-dados/                    # C++
-│   ├── README.md
-│   ├── 1 - Rápida Introdução ao C++/      # 7 exercícios (main.cpp + README)
-│   ├── 2 - Recursividade Funções Recursivas/
-│   │   ├── 01 … 06                        # 6 exercícios (06 dividido em fogo.cpp/.hpp)
-│   │   └── exercicio_complementar/        # lista em PDF + q1–q8 e soma_positivos
-│   ├── 3 - TAD - Tipos Abstratos de Dados/
-│   │   ├── 01 - Círculo/                  # Point + Circle
-│   │   └── 02 - Matriz/                   # Matrix (row-major)
-│   ├── 4 - Lista Linear com Alocação Sequencial (Vector)/
-│   │   ├── 01 - Implementando uma lista sequencial redimensionável/
-│   │   ├── 02  - Iterator/                # exercícios com std::vector
-│   │   └── 03 - Node/                     # primeira versão da ForwardList
-│   ├── 5 - Ponteiros e Alocação Dinâmica /
-│   │   └── exercicio_complementar/        # lista em PDF + q4.cpp
-│   ├── 6 - Lista Simplesmente Encadeada/
-│   │   └── ForwardList-5-out-2026/        # ForwardList.h + main.cpp
-│   └── Atividas_pessoais/                 # Ordenar_Encontrar.cpp
-│
-├── programacao-orientada-a-objetos/       # Java
-│   ├── README.md
-│   ├── atividades/
-│   │   ├── 01 - Classes e Objetos/        # 6 exercícios
-│   │   ├── 02 - Encapsulamento/           # 4 exercícios
-│   │   ├── 03 - Associação entre Classes/ # 5 exercícios
-│   │   ├── 04 - Herança/                  # 2 exercícios
-│   │   ├── 05 - Sobrescrita de Metodos/   # 3 sistemas
-│   │   └── 06 - Classes Abstratas e Interfazes/  # 2 exercícios
-│   └── praticaEquipe/
-│       ├── Código/                        # Nave Artemis (5 arquivos .java)
-│       └── Intruções PDF/                 # enunciados em PDF (3)
-│
-└── fundamentos-banco-de-dados/            # SQL
-    └── atividades/
-        ├── junções/                       # README + casa-do-dragao.sql
-        ├── funções de agregação/          # README + empresa.sql
-        └── Subconsultas/                  # PDF do enunciado + veterinario.sql
-```
 
 ---
 
@@ -137,15 +87,6 @@ psql -d estudos -f "fundamentos-banco-de-dados/atividades/Subconsultas/veterinar
 
 ---
 
-## 🌳 Módulo: Estrutura de Dados (C++)
-
-Disciplina **QXD0010 — Estrutura de Dados**, UFC Campus Quixadá (2026.2), prof. Atílio Gomes Luiz. Cada pasta de exercício segue o padrão:
-
-```
-NN - Nome do exercício/
-├── README.md   → enunciado (contexto, entrada e saída)
-└── main.cpp    → solução
-```
 
 ### 1. Rápida Introdução ao C++
 
@@ -267,43 +208,11 @@ Simulação dos sistemas de uma nave, desenvolvida em grupo. Cada integrante imp
 - **Empresa** — esquema clássico Company (`departamento`, `dependente`, `funcionario`, …), exportado com `pg_dump` 16.3.
 - **Clínica veterinária** — `Tutor`, `Animal`, `Consulta`, `Procedimento`, `ConsultaProcedimento`. O script já faz `DROP`, `CREATE` e `INSERT`, então pode ser reexecutado do zero.
 
----
 
-## 📐 Convenções do projeto
 
-- **Idioma:** nomes de pastas, enunciados e comentários em português.
-- **Numeração:** pastas prefixadas (`01 - …`, `2 - …`) na ordem em que o conteúdo foi visto.
-- **C++:** interface em `.h`/`.hpp`, implementação em `.cpp`; dados em `private`; complexidade anotada nos comentários das funções.
-- **Java:** uma classe por arquivo, `Exec` como ponto de entrada de cada exercício.
-- **Versões `v1` / sem sufixo:** o mesmo problema revisitado (ex.: `Animal v1` → `Animal`).
 
----
 
-## ⚠️ Problemas conhecidos
 
-Itens encontrados ao revisar o repositório para esta documentação:
-
-1. **`ForwardList::pop_back()` (módulo 6)** — dentro do `while`, `current = m_head->next;` nunca avança além do primeiro nó; com 3 ou mais elementos o laço não termina. Deveria ser `current = current->next;`.
-2. **`praticaEquipe/Código/Exec.java`** declara `public class NaveArtemisMain`, igual ao `NaveArtemisMain.java` (os dois têm praticamente o mesmo conteúdo). O Java exige que a classe pública tenha o nome do arquivo, então `javac *.java` falha nessa pasta. Remover ou renomear um dos dois.
-3. **Nomes de pasta com erro de digitação:** `Atividas_pessoais`, `Intruções PDF`, `Classes Abstratas e Interfazes`, `Fowardlist.h`. Renomear exige atualizar os links dos READMEs.
-4. **Pasta `5 - Ponteiros e Alocação Dinâmica /`** termina com espaço, o que atrapalha o `cd` e alguns sistemas de arquivos.
-5. **README raiz anterior desatualizado:** a árvore citava `código_atividades/` e pastas de POO que não existem mais (a estrutura atual usa `atividades/`).
-6. **READMEs dos módulos incompletos:** o de POO cobre só os blocos 01–04, e o de Estrutura de Dados só os módulos 1–4; os blocos 05 e 06 de POO e os módulos 5 e 6 de ED não aparecem lá.
-7. **`git clone https://github.com/seu-usuario/seu-repositorio.git`** nos READMEs dos módulos é um placeholder; troque pela URL real.
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Corrigir os problemas acima
-- [ ] Completar o módulo 5 (ponteiros): demais questões da lista
-- [ ] ForwardList: `pop_front`, `insert`, `remove`, iteradores e *rule of three*
-- [ ] Listas duplamente encadeadas, pilhas, filas e árvores binárias de busca
-- [ ] Algoritmos de ordenação (Selection, Insertion, Merge e Quick Sort)
-- [ ] POO: `ArrayList`, polimorfismo com listas de `Forma`/`Veiculo`, exceções, JUnit
-- [ ] SQL: documentar a atividade de subconsultas e adicionar diagramas ER
-
----
 
 <div align="center">
 
