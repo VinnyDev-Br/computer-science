@@ -148,6 +148,22 @@ public:
             }
         }
     }
+
+    // Remove a primeira ocorrência de value. Retorna true se removeu
+    // Complexidade: O(n)
+    bool remove(int value) {
+        Node* aux = m_head;
+        while (aux->next != nullptr) {
+            if (aux->next->key == value) {
+                Node* temp = aux->next;
+                aux->next = temp->next;
+                delete temp;
+                m_size--;
+                return true;
+            }
+            aux = aux->next;
+        }
+        
 };
 
 #endif
