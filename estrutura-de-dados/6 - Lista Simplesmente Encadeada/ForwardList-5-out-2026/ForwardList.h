@@ -118,7 +118,7 @@ public:
         delete temp;
         m_size--;
     }
-    
+
     // Inverte a ordem dos elementos da lista
     // Complexidade: O(n)
     void reverse() {
@@ -131,6 +131,22 @@ public:
             curr = next;
         }
         m_head->next = prev;
+    }
+
+    // Remove todas as ocorrências de value
+    // Complexidade: O(n)
+    void remove_all(int value) {
+        Node* aux = m_head;
+        while (aux->next != nullptr) {
+            if (aux->next->key == value) {
+                Node* temp = aux->next;
+                aux->next = temp->next;
+                delete temp;
+                m_size--;
+            } else {
+                aux = aux->next;
+            }
+        }
     }
 };
 
