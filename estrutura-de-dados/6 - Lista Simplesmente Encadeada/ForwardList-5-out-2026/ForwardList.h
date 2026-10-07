@@ -94,6 +94,17 @@ public:
         current->next = nullptr;
         m_size--;
     }
+
+    void clear(){
+
+        while(m_head->next != nullptr){
+            Node *temp = m_head->next;
+            m_head->next = temp->next;
+            delete temp;
+        }
+
+        m_size = 0;
+    }
 };
 
 #endif
