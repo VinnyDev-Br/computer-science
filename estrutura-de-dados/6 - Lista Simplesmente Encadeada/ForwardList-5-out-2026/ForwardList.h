@@ -118,6 +118,20 @@ public:
         delete temp;
         m_size--;
     }
+    
+    // Inverte a ordem dos elementos da lista
+    // Complexidade: O(n)
+    void reverse() {
+        Node* prev = nullptr;
+        Node* curr = m_head->next;
+        while (curr != nullptr) {
+            Node* next = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = next;
+        }
+        m_head->next = prev;
+    }
 };
 
 #endif
