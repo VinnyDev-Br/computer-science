@@ -163,7 +163,23 @@ public:
             }
             aux = aux->next;
         }
-        
+    }
+    
+    // Remove o elemento da posição index (0 até size - 1)
+    // Complexidade: O(n)
+    void remove_at(int index) {
+        if (index < 0 || index >= m_size) {
+            return;
+        }
+        Node* aux = m_head;
+        for (int i = 0; i < index; i++) {
+            aux = aux->next;
+        }
+        Node* temp = aux->next;
+        aux->next = temp->next;
+        delete temp;
+        m_size--;
+    }
 };
 
 #endif
