@@ -180,7 +180,7 @@ public:
         delete temp;
         m_size--;
     }
-    
+
     // Insere um elemento na posição index (0 até size)
     // Complexidade: O(n)
     void insert_at(int value, int index) {
@@ -196,6 +196,19 @@ public:
         novo->next = aux->next;
         aux->next = novo;
         m_size++;
+    }
+
+    // Verifica se um valor existe na lista
+    // Complexidade: O(n)
+    bool contains(int value) {
+        Node* aux = m_head->next;
+        while (aux != nullptr) {
+            if (aux->key == value) {
+                return true;
+            }
+            aux = aux->next;
+        }
+        return false;
     }
 };
 
