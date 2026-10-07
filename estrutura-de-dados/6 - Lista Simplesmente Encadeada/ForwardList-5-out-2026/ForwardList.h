@@ -180,6 +180,23 @@ public:
         delete temp;
         m_size--;
     }
+    
+    // Insere um elemento na posição index (0 até size)
+    // Complexidade: O(n)
+    void insert_at(int value, int index) {
+        if (index < 0 || index > m_size) {
+            return;
+        }
+        Node* aux = m_head;
+        for (int i = 0; i < index; i++) {
+            aux = aux->next;
+        }
+        Node* novo = new Node;
+        novo->key = value;
+        novo->next = aux->next;
+        aux->next = novo;
+        m_size++;
+    }
 };
 
 #endif
