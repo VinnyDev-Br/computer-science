@@ -1,13 +1,13 @@
-public class RendaFixa extends Investimendo{
-    String taxaCDI;
+public class RendaFixa extends Investimento {
+    private double taxaCDI;
 
-    public RendaFixa(String nome, String dataCompra, double valorIvestido, String taxaCDI){
-        super(nome, dataCompra, valorIvestido);
+    public RendaFixa(String nome, String dataCompra, double valorInvestido, double taxaCDI) {
+        super(nome, dataCompra, valorInvestido);
         this.taxaCDI = taxaCDI;
     }
 
     @Override
-    public boolean calcularRetorno(int dias){
-        return this.valorIvestido * (this.taxaCDI/100) * (dias/365);
-    }       
+    public double calcularRetorno(int dias) {
+        return this.valorInvestido * (this.taxaCDI / 100) * (dias / 365.0);
+    }
 }

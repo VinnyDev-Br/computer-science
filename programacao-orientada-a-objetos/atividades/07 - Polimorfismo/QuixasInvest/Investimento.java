@@ -1,14 +1,13 @@
-public class Investimendo{
+public abstract class Investimento {
     protected String nome;
     protected String dataCompra;
-    protected double valorIvestido;
+    protected double valorInvestido;
 
-    public Investimento(String nome, String dataCompra, double valorIvestido){
+    public Investimento(String nome, String dataCompra, double valorInvestido) {
         this.nome = nome;
         this.dataCompra = dataCompra;
-        this.valorIvestido = valorIvestido;
+        this.valorInvestido = valorInvestido;
     }
 
     public abstract double calcularRetorno(int dias);
-
 }

@@ -1,3 +1,3 @@
-public interface Tributavel{
-    public double calcularImposto(double retorno);
+public interface Tributavel {
+    double calcularImposto(double retorno);
 }
