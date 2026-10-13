@@ -30,25 +30,25 @@ public class Exec1 {
         }
     }
 
-public static void main(String[] args) {
-    try (Scanner entrada = new Scanner(System.in)) {
-        System.out.println("Digite 1-Ações, 2-Renda Fixa");
-        int opc = entrada.nextInt();
-        entrada.nextLine();
-
-        Investimento e = criarInvestimento(opc, entrada);
-
-        if (e != null) {
-            System.out.println("Quantidade de dias:");
-            int dias = entrada.nextInt();
+    public static void main(String[] args) {
+        try (Scanner entrada = new Scanner(System.in)) {
+            System.out.println("Digite 1-Ações, 2-Renda Fixa");
+            int opc = entrada.nextInt();
             entrada.nextLine();
 
-            double retorno = e.calcularRetorno(dias);
-            System.out.println("O retorno foi: " + retorno);
+            Investimento e = criarInvestimento(opc, entrada);
 
-            if (e instanceof Tributavel) {
-                double imposto = ((Tributavel) e).calcularImposto(retorno);
-                System.out.println("O valor do imposto foi: " + imposto);
+            if (e != null) {
+                System.out.println("Quantidade de dias:");
+                int dias = entrada.nextInt();
+                entrada.nextLine();
+
+                double retorno = e.calcularRetorno(dias);
+                System.out.println("O retorno foi: " + retorno);
+
+                if (e instanceof Tributavel) {
+                    double imposto = ((Tributavel) e).calcularImposto(retorno);
+                    System.out.println("O valor do imposto foi: " + imposto);
                 }
             }
         }
