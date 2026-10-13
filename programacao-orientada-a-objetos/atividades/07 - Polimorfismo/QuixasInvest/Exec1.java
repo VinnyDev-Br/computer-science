@@ -30,35 +30,27 @@ public class Exec1 {
         }
     }
 
-    public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-        Investimento[] investimentos = new Investimento[2];
+public static void main(String[] args) {
+    try (Scanner entrada = new Scanner(System.in)) {
+        System.out.println("Digite 1-Ações, 2-Renda Fixa");
+        int opc = entrada.nextInt();
+        entrada.nextLine();
 
-        for (int i = 0; i < investimentos.length; i++) {
-            System.out.println("Escolha o tipo de investimento (1-Ação, 2-Renda fixa) para a posição " + i + ":");
-            int opc = entrada.nextInt();
-            entrada.nextLine(); // limpa o \n que sobrou do nextInt
+        Investimento e = criarInvestimento(opc, entrada);
 
-            investimentos[i] = criarInvestimento(opc, entrada);
-            if (investimentos[i] == null) {
-                break;
-            }
-
-            System.out.println("Quantidade de dias do investimento:");
+        if (e != null) {
+            System.out.println("Quantidade de dias:");
             int dias = entrada.nextInt();
             entrada.nextLine();
 
-            // Chamada polimórfica
-            double retorno = investimentos[i].calcularRetorno(dias);
-            System.out.println("O retorno obtido foi: " + retorno);
+            double retorno = e.calcularRetorno(dias);
+            System.out.println("O retorno foi: " + retorno);
 
-            // Só Acoes é Tributavel
-            if (investimentos[i] instanceof Tributavel) {
-                Tributavel t = (Tributavel) investimentos[i];
-                System.out.println("O imposto sobre o retorno foi: " + t.calcularImposto(retorno));
+            if (e instanceof Tributavel) {
+                double imposto = ((Tributavel) e).calcularImposto(retorno);
+                System.out.println("O valor do imposto foi: " + imposto);
+                }
             }
         }
-
-        entrada.close();
     }
 }
