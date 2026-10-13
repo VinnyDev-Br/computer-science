@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Quixasinvest {
+public class Exec1 {
 
     // Método auxiliar: retorna a instância conforme o tipo escolhido
     public static Investimento criarInvestimento(int tipo, Scanner entrada) {

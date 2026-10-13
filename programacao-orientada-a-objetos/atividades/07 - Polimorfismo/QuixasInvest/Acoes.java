@@ -10,12 +10,12 @@ public class Acoes extends Investimento implements Tributavel{
     }
 
     @Override
-    public boolean calcularRetorno(int dias){
-        return (this.precoAtual - this.valorInvestido) * (dias/365);
+    public double calcularRetorno(int dias){
+        return (this.precoAtual - this.valorInvestido) * (dias/365.0);
     }
 
     @Override
     public double calcularImposto(double retorno){
-        return retorno * (1+taxa);
+        return retorno * taxa;
     }
 }
