@@ -98,25 +98,22 @@ public:
 
     //Remove todos os elementos da lista
     void clear(){
-
-        while(m_head->next != nullptr){
-            Node *temp = m_head->next;
-            m_head->next = temp->next;
-            delete temp;
+        while (m_head->next != nullptr){
+            Node* aux = m_head->next;
+            m_head->next = m_head->next->next;
+            delete aux;
         }
-
         m_size = 0;
     }
 
     // Remove o primeiro elemento da lista
     // Complexidade: O(1)
     void pop_front() {
-        if (m_head->next == nullptr) {
-            return;
-        }
-        Node* temp = m_head->next;
-        m_head->next = temp->next;
-        delete temp;
+        if (m_head->next == nullptr) { return; }
+
+        Node* aux = m_head->next;
+        m_head->next = m_head->next->next;
+        delete aux;
         m_size--;
     }
 
