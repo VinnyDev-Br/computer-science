@@ -45,14 +45,15 @@ public:
     // Complexidade: O(n)
     void push_back(int value) {
         Node *aux = m_head;
-        while (aux->next != nullptr) {
+        while (aux->next != nullptr){
             aux = aux->next;
-        }
-        Node *p = new Node;
+        }       
+        Node* p = new Node;
         p->key = value;
         p->next = nullptr;
         aux->next = p;
-        m_size++;        
+        m_size++;
+
     }
 
     // Retorna o tamanho atual da lista
