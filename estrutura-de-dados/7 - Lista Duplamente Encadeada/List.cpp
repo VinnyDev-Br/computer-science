@@ -91,7 +91,7 @@ int List::pop_back() {
     if (m_size == 0){
         throw std::out_of_range("pop_back em lista vazia");    
     }
-    
+
     // Crio um nó aux que recebe o último elemento da lista 
     Node *aux = m_head->anterior; 
     // Armazeno o key do ultimo para ser retornado
@@ -121,9 +121,21 @@ void List::removeAll(int key) {
 }
 
 // Remove todos os nós, deixando só a cabeça apontando para si
-// mesma (estado de lista vazia). m_size volta a 0.
+//  m_size volta a 0.
 void List::clear() {
-
+    // Quando a lista está vazia o m_head->anterior aponta para m_head
+    // Faço um loop com essa condição de parada até que a condição seja cumprida 
+    while (m_head->anterior != m_head){
+        //Armazeno o último nó para desalocar
+        Node *aux = m_head->anterior; 
+        // Atualizo os valores pois o ultimo passar ser o penultimo
+        // e o penultimo nao aponta mais para o ultimo e sim para cabeça
+        // que é o m_head.
+        m_head->anterior = m_head->anterior->anterior;
+        m_head->anterior->proximo = m_head;
+        delete aux;
+    }
+    m_size = 0;
 }
 
 // Imprime os valores do primeiro ao último (segue os "proximo"
