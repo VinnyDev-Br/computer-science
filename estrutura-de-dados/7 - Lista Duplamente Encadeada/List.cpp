@@ -188,10 +188,16 @@ void List::print() {
     }
 }
 
-// Imprime os valores do último ao primeiro (segue os "anterior"
+// Imprime os valores do último ao primeiro
 // a partir de m_head->anterior até voltar à cabeça).
 void List::printReverse() {
-
+    // Mesma lógica do print mas partindo do último e percorrendo com o laço
+    // de trás pra frente até o ultimo ser m_head
+    Node *aux = m_head->anterior;
+    while (aux != m_head){
+        std::cout << aux->key << " ";
+        aux = aux->anterior;
+    }
 }
 
 // Retorna true se a lista está vazia ou seja se m_size for igual a 0.
