@@ -4,6 +4,7 @@
 
 #include "List.h"
 #include <iostream>
+#include <stdexcept>
 
 // Construtor: cria a lista vazia. A cabeça aponta para si mesma
 // nos dois sentidos (anterior e proximo) e m_size começa em 0.
@@ -82,7 +83,7 @@ void List::push_back(int key) {
 // (ajustando os 4 ponteiros). Incrementa m_size.
 void List::insertAfter(int key, int k) {
     // Primeiro verifico se a posição é válida se não for lanço exceção
-    if (k > m_size || k < 0){
+    if (k > m_size || k <= 0){
         throw std::out_of_range("Indice inválido");
     }
 
@@ -98,8 +99,8 @@ void List::insertAfter(int key, int k) {
 
     novo->anterior = aux;
     novo->proximo = aux->proximo;
+    aux->proximo->anterior = novo;
     aux->proximo = novo;
-    aux-
     m_size++;
 }
 
