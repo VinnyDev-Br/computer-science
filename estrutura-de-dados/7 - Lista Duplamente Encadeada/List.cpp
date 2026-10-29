@@ -227,12 +227,30 @@ int List::size() {
     return m_size;
 }
 
-// Concatena lst no final desta lista, religando os ponteiros
-// (último desta -> primeiro de lst, último de lst -> cabeça desta).
-// Soma os tamanhos e deixa lst vazia (só a cabeça, m_size = 0).
-// Cuidado com o caso de lst estar vazia.
+// Concatena lst ao final da lista atual, sem criar nós novos.
 void List::concat(List& lst) {
+    // Se lst está vazia ou são iguais, não há nada para concatenar
+    if (lst.empty() || this == &lst){ 
+        return;
+    }
 
+    // Guarda o último nó desta lista antes de alterar qualquer ponteiro
+    Node *ultimo = m_head->anterior;
+
+    // Liga o último desta lista ao primeiro de lst (nos dois sentidos)
+    ultimo->proximo = lst.m_head->proximo;
+    lst.m_head->proximo->anterior = ultimo;
+
+    // O último de lst passa a ser o último desta lista e aponta
+    // para o m_head, mantendo a lista circular
+    m_head->anterior = lst.m_head->anterior;
+    lst.m_head->anterior->proximo = m_head;
+
+    m_size += lst.m_size;
+
+    lst.m_head->proximo = lst.m_head;
+    lst.m_head->anterior = lst.m_head;
+    lst.m_size = 0; 
 }
 
 // Atribuição: limpa esta lista e copia todos os valores de lst.
