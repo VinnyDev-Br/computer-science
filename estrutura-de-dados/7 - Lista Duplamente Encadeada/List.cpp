@@ -37,7 +37,7 @@ List::List(const List& lst) {
 
 // Destrutor: Desaloca todos os nós incluindo o nó sentinela
 List::~List() {
-    // Começa pelo último nó e anda para trás até chegar ao nó cabeça
+    // Começa pelo último nó e anda para trás pra frente até chegar ao nó cabeça
     Node *ultimo = m_head->anterior;
 
     while (ultimo != m_head){
@@ -152,10 +152,26 @@ void List::remove(int key) {
     }
 }
 
-// Remove todas as ocorrências de key: igual ao remove, mas
-// continua percorrendo até voltar à cabeça.
+// Remove todas as ocorrências de key da lista.
 void List::removeAll(int key) {
+    Node* aux = m_head->proximo;
 
+    while (aux != m_head){
+        // Guarda o próximo nó antes de um possível delete,
+        // senão perderíamos o caminho para continuar o percurso
+        Node* proximo = aux->proximo;
+
+        if (aux->key == key){
+            // Mesma lógica do remove: o anterior e o próximo passam a
+            // apontar um para o outro, "pulando" o nó que será apagado
+            aux->anterior->proximo = aux->proximo;
+            aux->proximo->anterior = aux->anterior;
+            delete aux;
+            m_size--;
+        }
+
+        aux = proximo;
+    }
 }
 
 // Remove todos os nós, deixando só a cabeça apontando para si
