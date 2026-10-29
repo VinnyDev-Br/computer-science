@@ -29,10 +29,14 @@ List::List(const List& lst) {
     m_head->anterior = m_head; 
     m_size = 0;
 
-    Node *aux = lst.m_head->proximo; // Nó auxiliar que recebe o primeiro elemento da lista a ser copiada
-    while (aux != lst.m_head){ // Como o ultimo nó aponta para o lst.m_head essa será a condição de parada
-        push_back(aux->key);   // Uso a função pushback para adicionar todos os nós
-        aux = aux->proximo;    // aux avança para o proximo nó
+    // Nó auxiliar que recebe o primeiro elemento da lista a ser copiada
+    Node *aux = lst.m_head->proximo; 
+    // Como o ultimo nó aponta para o lst.m_head essa será a condição de parada
+    while (aux != lst.m_head){ 
+        // Uso a função pushback para adicionar todos os nós
+        push_back(aux->key);
+        // aux avança para o proximo nó
+        aux = aux->proximo;    
     }
 }
 
@@ -42,8 +46,10 @@ List::~List() {
     Node *ultimo = m_head->anterior;
 
     while (ultimo != m_head){
-        Node *aux = ultimo; // Guarda o nó a ser apagado
-        ultimo = ultimo->anterior; // Atualiza o ultimo nó da lista para receber o penultimo
+        // Guarda o nó a ser apagado
+        Node *aux = ultimo; 
+        // Atualiza o ultimo nó da lista para receber o penultimo
+        ultimo = ultimo->anterior; 
         delete aux; 
     }
 
