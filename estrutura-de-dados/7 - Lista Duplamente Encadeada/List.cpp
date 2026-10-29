@@ -99,7 +99,7 @@ int List::pop_back() {
     // O penúltimo passar a ser o último
     m_head->anterior = m_head->anterior->anterior; 
     m_head->anterior->proximo = m_head;
-    // Deleto o último
+    // Desaloco a memória do último nó armazenado em aux
     delete aux;
 
     m_size--;
@@ -109,9 +109,27 @@ int List::pop_back() {
 }
 
 // Remove a primeira ocorrência de key: percorre a lista, e ao
-// achar o valor, religa anterior e proximo e deleta o nó. Para na primeira.
+// achar o valor, religa anterior e proximo e deleta o nó. Para na primeira ocorrência.
 void List::remove(int key) {
-
+    // Nó auxiliar para armazenar o primeiro nó
+    Node* aux = m_head->proximo;
+    // Se a lista estiver vazia a condição do laço não executa
+    // pois o aux é o primeiro nó e se estiver vázia o ultimo nó 
+    // é o proprio m_head
+    while (aux != m_head){
+        // Faço a verificação se o valor procurada
+        // Se estiver eu deleto e faço a ligação do seu anterior para o seu proximo
+        // E o seu sucessor o anterior dele recebe o anterior do atual
+        if (aux->key == key){ 
+            aux->anterior->proximo = aux->proximo;
+            aux->proximo->anterior = aux->anterior;
+            delete aux;
+            m_size--;
+            return;
+        }
+        // Caso Contrário eu continuo a percorrer a lista
+        aux = aux->proximo;
+    }
 }
 
 // Remove todas as ocorrências de key: igual ao remove, mas
