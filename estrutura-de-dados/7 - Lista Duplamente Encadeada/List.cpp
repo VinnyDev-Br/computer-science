@@ -87,7 +87,25 @@ void List::insertAfter(int key, int k) {
 // Remove o último nó (m_head->anterior), devolve o valor dele,
 // ajusta os ponteiros, deleta o nó e decrementa m_size.
 int List::pop_back() {
+    // Verifico se a lista está vazia, se estiver lanço uma exceção
+    if (m_size == 0){
+        throw std::out_of_range("pop_back em lista vazia");    
+    }
+    
+    // Crio um nó aux que recebe o último elemento da lista 
+    Node *aux = m_head->anterior; 
+    // Armazeno o key do ultimo para ser retornado
+    int value = m_head->anterior->key;
+    // O penúltimo passar a ser o último
+    m_head->anterior = m_head->anterior->anterior; 
+    m_head->anterior->proximo = m_head;
+    // Deleto o último
+    delete aux;
 
+    m_size--;
+
+    // Retorno o valor armazenado do último elemento
+    return value; 
 }
 
 // Remove a primeira ocorrência de key: percorre a lista, e ao
