@@ -81,7 +81,26 @@ void List::push_back(int key) {
 // Percorre k nós a partir do primeiro e liga o novo nó depois dele
 // (ajustando os 4 ponteiros). Incrementa m_size.
 void List::insertAfter(int key, int k) {
+    // Primeiro verifico se a posição é válida se não for lanço exceção
+    if (k > m_size || k < 0){
+        throw std::out_of_range("Indice inválido");
+    }
+
+    Node *novo = new Node(key, nullptr, nullptr);
     
+    int i = 0;
+    Node *aux = m_head;
+
+    while (i < k){
+        aux = aux->proximo;
+        i++;
+    }
+
+    novo->anterior = aux;
+    novo->proximo = aux->proximo;
+    aux->proximo = novo;
+    aux-
+    m_size++;
 }
 
 // Remove o último nó (m_head->anterior), devolve o valor dele,
@@ -159,7 +178,14 @@ void List::clear() {
 // Imprime os valores do primeiro ao último (segue os "proximo"
 // a partir de m_head->proximo até voltar à cabeça).
 void List::print() {
-
+    // Irei armazenar o primeiro nó 
+    Node *aux = m_head->proximo;
+    // Com um laço irei percorrer a lista até que aux seja igual a m_head
+    // a lista terá chegado ao fim quando o ultimo nó seu proximo aponta para m_head
+    while (aux != m_head){
+        std::cout << aux->key << " ";
+        aux = aux->proximo;
+    }
 }
 
 // Imprime os valores do último ao primeiro (segue os "anterior"
