@@ -5,6 +5,7 @@
 #include "List.h"
 #include <iostream>
 #include <stdexcept>
+#include <utility>
 
 // Construtor: cria a lista vazia. A cabeça aponta para si mesma
 // nos dois sentidos (anterior e proximo) e m_size começa em 0.
@@ -229,7 +230,7 @@ int List::size() {
 
 // Concatena lst ao final da lista atual, sem criar nós novos.
 void List::concat(List& lst) {
-    // Se lst está vazia ou são iguais, não há nada para concatenar
+    // Verifico Se lst está vazia ou são iguais, se sim não há nada para concatenar
     if (lst.empty() || this == &lst){ 
         return;
     }
@@ -254,18 +255,52 @@ void List::concat(List& lst) {
 }
 
 // Atribuição: limpa esta lista e copia todos os valores de lst.
-// Cuidado com auto-atribuição (l = l): se this == &lst, não faça nada.
 List List::operator=(const List& lst) {
+    // Verifico se já são iguais, se for não há nada a fazer
+    if (this == &lst){
+        return *this;
+    }
+    // Usa o construtor de cópia para criar uma lista nova com os valores de lst
+    List copia(lst);
 
-}
+    // Troca o nó m_head e o tamanho desta lista com os da cópia.
+    // Agora esta lista tem os valores de lst, e a cópia ficou com os nós antigos.
+    std::swap(m_head, copia.m_head);
+    std::swap(m_size, copia.m_size);
+
+    // Ao sair da função, o destrutor de copia libera os nós antigos
+    // inclusive o nó m_head antigo, sem vazamento de memória.
+    return *this;
+}   
 
 // Retorna true se as listas têm o mesmo tamanho e o k-ésimo
 // valor de uma é igual ao k-ésimo da outra.
 bool List::operator==(const List& lst) {
+    // Verifico se o tamanho das listas são iguais se não for já retorno false
+    if (lst.m_size != m_size){
+        return false;
+    }
 
+    // Sabendo que o tamanho é igual irei percorrer os dois ao mesmo tempo
+    // Definindo duas auxiliares para cada e verificando se possui algum valor diferente
+    // se houver return false, caso contrário o aux anda até sair do laço e retornar true
+    Node *aux = m_head->proximo;
+    Node *auxlst = lst.m_head->proximo;
+
+    while (aux != m_head && auxlst != lst.m_head){
+        if (aux->key != auxlst->key){
+            return false;
+        }
+        else{
+            aux = aux->proximo;
+            auxlst = auxlst->proximo;
+        }
+    }
+
+    return true;
 }
 
 // Retorna true se as listas são diferentes (o contrário do ==).
 bool List::operator!=(const List& lst) {
-
+    return !(*this == lst);
 }
