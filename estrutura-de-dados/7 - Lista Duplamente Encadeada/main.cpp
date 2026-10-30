@@ -56,7 +56,8 @@ int main() {
         // exit
         if (token == "exit") {
             break;
-        }
+        } 
+        
         // create
         else if (token == "create") {
             listas.push_back(List());
@@ -76,7 +77,7 @@ int main() {
             int l1, l2;
             ss >> l1 >> l2;
             if (!indiceValido(listas, l1) || !indiceValido(listas, l2)) {
-                cout << "lista inexistente" << endl;
+                cout << "lista inexstente" << endl;
             }
             else if (token == "concat") {
                 listas[l1].concat(listas[l2]);

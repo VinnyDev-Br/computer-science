@@ -22,16 +22,16 @@ public:
     void insertAfter(int key, int k);
     void remove(int key);
     void removeAll(int key);
-    void print();
-    void printReverse();
-    bool empty();
-    int size();
+    void print() const;
+    void printReverse() const;
+    bool empty() const;
+    int size() const;
     void clear();
     void concat(List& lst);
 
     List operator=(const List& lst);
-    bool operator==(const List& lst);
-    bool operator!=(const List& lst);
+    bool operator==(const List& lst) const;
+    bool operator!=(const List& lst) const;
 };
 
 #endif // LIST_H

@@ -201,7 +201,7 @@ void List::clear() {
 
 // Imprime os valores do primeiro ao último (segue os "proximo"
 // a partir de m_head->proximo até voltar à cabeça).
-void List::print() {
+void List::print() const {
     // Irei armazenar o primeiro nó 
     Node *aux = m_head->proximo;
     // Com um laço irei percorrer a lista até que aux seja igual a m_head
@@ -214,7 +214,7 @@ void List::print() {
 
 // Imprime os valores do último ao primeiro
 // a partir de m_head->anterior até voltar à cabeça).
-void List::printReverse() {
+void List::printReverse const() {
     // Mesma lógica do print mas partindo do último e percorrendo com o laço
     // de trás pra frente até o ultimo ser m_head
     Node *aux = m_head->anterior;
@@ -225,17 +225,17 @@ void List::printReverse() {
 }
 
 // Retorna true se a lista está vazia ou seja se m_size for igual a 0.
-bool List::empty() {
+bool List::empty const() {
     return m_size == 0;
 }
 
 // Retorna o tamanho da lista.
-int List::size() {
+int List::size const() {
     return m_size;
 }
 
 // Concatena lst ao final da lista atual, sem criar nós novos.
-void List::concat(List& lst) {
+void List::concat(List& lst){
     // Verifico Se lst está vazia ou são iguais, se sim não há nada para concatenar
     if (lst.empty() || this == &lst){ 
         return;
@@ -261,12 +261,12 @@ void List::concat(List& lst) {
 }
 
 // Atribuição: limpa esta lista e copia todos os valores de lst.
-List List::operator=(const List& lst) {
+List List::operator=(const List& lst){
     // Verifico se já são iguais, se for não há nada a fazer
     if (this == &lst){
         return *this;
     }
-    // Usa o construtor de cópia para criar uma lista nova com os valores de lst
+    // Uso o construtor de cópia para criar uma lista nova com os valores de lst
     List copia(lst);
 
     // Troca o nó m_head e o tamanho desta lista com os da cópia.
@@ -281,7 +281,7 @@ List List::operator=(const List& lst) {
 
 // Retorna true se as listas têm o mesmo tamanho e o k-ésimo
 // valor de uma é igual ao k-ésimo da outra.
-bool List::operator==(const List& lst) {
+bool List::operator==(const List& lst) const{
     // Verifico se o tamanho das listas são iguais se não for já retorno false
     if (lst.m_size != m_size){
         return false;
@@ -307,6 +307,6 @@ bool List::operator==(const List& lst) {
 }
 
 // Retorna true se as listas são diferentes (o contrário do ==).
-bool List::operator!=(const List& lst) {
+bool List::operator!=(const List& lst) const{
     return !(*this == lst);
 }
