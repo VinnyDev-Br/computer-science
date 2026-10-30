@@ -214,7 +214,7 @@ void List::print() const {
 
 // Imprime os valores do último ao primeiro
 // a partir de m_head->anterior até voltar à cabeça).
-void List::printReverse const() {
+void List::printReverse() const {
     // Mesma lógica do print mas partindo do último e percorrendo com o laço
     // de trás pra frente até o ultimo ser m_head
     Node *aux = m_head->anterior;
@@ -225,12 +225,12 @@ void List::printReverse const() {
 }
 
 // Retorna true se a lista está vazia ou seja se m_size for igual a 0.
-bool List::empty const() {
+bool List::empty () const{
     return m_size == 0;
 }
 
 // Retorna o tamanho da lista.
-int List::size const() {
+int List::size () const{
     return m_size;
 }
 
