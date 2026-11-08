@@ -1,2 +1,0 @@
-
-            s.push(palavra[i]);
