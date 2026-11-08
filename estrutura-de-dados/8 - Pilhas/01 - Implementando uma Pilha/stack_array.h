@@ -4,7 +4,7 @@
 
 class Stack{
 private:
-    int const CAPACIDADE = 100;
+    int static const CAPACIDADE = 100;
     int dados[CAPACIDADE];
     int topo;
 
@@ -13,15 +13,15 @@ public:
         topo = -1;
     }
 
-    bool vazia const (){
+    bool vazia() const {
         return topo == -1;
     }
 
-    bool cheio const(){
+    bool cheio() const{
         return topo == CAPACIDADE-1;
     }
 
-    int tamanho const {
+    int tamanho() const {
         return topo + 1;
     }
 
@@ -34,6 +34,6 @@ public:
         if (!vazia())
             topo--;
     }
-}
+};
 
 #endif
