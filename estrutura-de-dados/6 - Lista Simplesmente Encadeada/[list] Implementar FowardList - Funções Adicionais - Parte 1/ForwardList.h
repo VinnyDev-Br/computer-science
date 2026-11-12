@@ -253,6 +253,24 @@ public:
         return m_head3;
     }
 
+    Node* listaImpares(Node *lst){
+        Node *m_head3 = new Node(0, nullptr);
+        Node *aux1 = lst->next;
+        Node *aux2 = m_head3;
+
+        while (aux1 != nullptr){
+            if (aux1->value % 2 != 0){
+                Node* novo = new Node(aux1->value, nullptr);
+                aux2->next = novo;
+                aux2 = aux2->next;
+            }
+
+            aux1 = aux1->next;
+        }
+
+        return m_head3;
+    }
+
 };
 
 #endif
