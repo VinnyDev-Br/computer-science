@@ -221,6 +221,38 @@ public:
         }
     }
 
+    Node* diferenca(Node *m_head1, Node *m_head2){
+        Node *m_head3 = new Node(0, nullptr);
+
+        Node* aux1 = m_head1->next;
+        Node* aux3 = m_head3;
+
+        while (aux1 != nullptr){
+
+            bool achou = false;
+            Node* aux2 = m_head2->next;
+
+            while (aux2 != nullptr){
+                if (aux1->value == aux2->value){
+                    achou = true;
+                    break;
+                }
+
+                aux2 = aux2->next;
+            }
+
+            if (!achou){
+                Node* novo = new Node(aux1->value, nullptr);
+                aux3->next = novo;
+                aux3 = novo;
+            }
+
+            aux1 = aux1->next;
+        }
+        
+        return m_head3;
+    }
+
 };
 
 #endif
