@@ -103,18 +103,36 @@ int ex07_posicao(const vector<int>& v, int valor) {
 // 8) Remover todos os negativos com erase dentro do laço
 //    Lembre: it = v.erase(it) e não incrementar nesse caso
 void ex08_remover_negativos(vector<int>& v) {
-    
+    for (auto it = v.begin(); it != v.end()){
+        if (*it < 0){
+            it = v.erase(it);
+        }
+        else{
+            ++it;
+        }
+    }
 }
 
 // 9) Inserir um valor no meio do vector com insert
 void ex09_inserir_meio(vector<int>& v, int valor) {
-    // TODO
+    
 }
 
 // 10) Verificar palíndromo com dois iteradores (um no início, outro no fim)
 bool ex10_palindromo(const string& s) {
-    // TODO
-    return false;
+    if (s.empty()) return true;
+
+    auto fim = s.end() - 1;
+    auto inicio = s.begin();
+
+    while (inicio <= fim){
+        if (*inicio != *fim){
+            return false;
+        }
+        ++inicio;
+        --fim;
+    }   
+    return true;
 }
 
 // ============================================================
