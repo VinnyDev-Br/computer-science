@@ -231,7 +231,35 @@ void ex06_josephus(int n, int k) {
 //      TAMANHO -> imprime quantos clientes aguardam
 // ---------------------------------------------------------------------------
 void ex07_filaDeSenhas(istream& in) {
-    // TODO
+    string entrada;
+    queue<int> fila;
+    while (in >> entrada){
+        if (entrada == "CHEGOU"){
+            if (fila.empty()){
+                fila.push(1);
+            }
+            else{
+                int valor = fila.back() + 1;
+                fila.push(valor);
+            }
+        }
+        else if (entrada == "TAMANHO"){
+            (!fila.empty()) ? cout << fila.size(): cout << "fila vazia";
+        }
+        else if (entrada == "ATENDER"){
+            cout << fila.front();
+            
+            for (int i = 1; i < (int)fila.size(); i++){
+                fila.push(fila.front());
+                fila.pop();
+            }
+
+            fila.pop();
+        }
+        else{
+            cout << "Inválido";
+        }
+    }
 }
 
 // ---------------------------------------------------------------------------
@@ -244,7 +272,7 @@ void ex07_filaDeSenhas(istream& in) {
 //    "abacb" -> "aabbc"
 // ---------------------------------------------------------------------------
 void ex08_primeiroNaoRepetido(const string& fluxo) {
-    // TODO
+
 }
 
 // ---------------------------------------------------------------------------
@@ -254,7 +282,14 @@ void ex08_primeiroNaoRepetido(const string& fluxo) {
 //    x = 1: {3 1 4 1 5 9 2 6 1} -> {3 4 5 9 2 6}
 // ---------------------------------------------------------------------------
 void removerTodos(list<int>& l, int x) {
-    // TODO
+    for (auto it = l.begin(); it != l.end();){
+        if (*it == x){
+            it = l.erase(it);
+        }
+        else{
+            ++it;
+        }
+    }
 }
 
 // ---------------------------------------------------------------------------
@@ -268,7 +303,9 @@ void removerTodos(list<int>& l, int x) {
 //    Ao final, imprime o texto.
 // ---------------------------------------------------------------------------
 void ex10_editorComCursor(istream& in) {
-    // TODO
+
+    string texto;
+
 }
 
 // ---------------------------------------------------------------------------
@@ -286,52 +323,90 @@ private:
         No* anterior;
         No* proximo;
     };
-
-    // TODO: atributos (sentinela, tamanho...)
+    
+    No* m_head;
+    int m_size;
 
 public:
     Deque() {
-        // TODO
+        m_head = new No();
+        m_head->valor = 0;
+        m_head->anterior = m_head;
+        m_head->proximo = m_head;
+        m_size = 0;
     }
 
     ~Deque() {
-        // TODO
+        while (m_head->proximo != m_head){
+            popFront();
+        }
+
+        delete m_head;
     }
 
+    //adiciona x no início.
     void pushFront(int x) {
-        // TODO
-    }
+        No* novo = new No();
+        novo->anterior = m_head;
+        novo->proximo = m_head->proximo;
 
+        m_head->proximo->anterior = novo;
+        m_head->proximo = novo;
+
+        novo->valor = x;
+
+        m_size++;
+    }
+    //adiciona x no fim.
     void pushBack(int x) {
-        // TODO
+
+        No* novo = new No();
+        novo->valor = x;
+        novo->proximo = m_head;
+        novo->anterior = m_head->anterior;
+        m_head->anterior->proximo = novo;
+        m_head->anterior = novo;
+        m_size++;
     }
 
-    void popFront() {
-        // TODO
+    // remove o primeiro elemento (não retorna nada).
+    void popFront() {  
+        if (empty()) return;
+        No* primeiro = m_head->proximo;
+        No* segundo = m_head->proximo->proximo;
+        m_head->proximo = segundo;
+        segundo->anterior = m_head;
+        delete primeiro;
+        m_size--;
     }
-
+    //remove o último elemento (não retorna nada).
     void popBack() {
-        // TODO
+        if(empty()) return;
+        No* ultimo = m_head->anterior;
+        No* penultimo = m_head->anterior->anterior;
+
+        penultimo->proximo = m_head;
+        m_head->anterior = penultimo;
+        delete ultimo;
+        m_size--;
     }
 
     int front() const {
-        // TODO
-        return 0;
+        if (empty()) throw std::runtime_error("deque vazio");
+        return m_head->proximo->valor;
     }
 
     int back() const {
-        // TODO
-        return 0;
+        if (empty()) throw std::runtime_error("deque vazio");
+        return m_head->anterior->valor;
     }
 
     int size() const {
-        // TODO
-        return 0;
+        return m_size;
     }
 
     bool empty() const {
-        // TODO
-        return true;
+        return m_size == 0;
     }
 };
 

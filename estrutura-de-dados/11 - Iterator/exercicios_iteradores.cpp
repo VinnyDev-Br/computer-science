@@ -103,7 +103,7 @@ int ex07_posicao(const vector<int>& v, int valor) {
 // 8) Remover todos os negativos com erase dentro do laço
 //    Lembre: it = v.erase(it) e não incrementar nesse caso
 void ex08_remover_negativos(vector<int>& v) {
-    for (auto it = v.begin(); it != v.end()){
+    for (auto it = v.begin(); it != v.end();){
         if (*it < 0){
             it = v.erase(it);
         }
